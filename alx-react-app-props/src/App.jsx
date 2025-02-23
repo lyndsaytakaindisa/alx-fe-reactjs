@@ -4,6 +4,9 @@ import MainContent from './components/MainContent'
 import UserProfile from './components/UserProfile'
 import Footer from './components/Footer'
 import UserContext from './UserContext.js'
+import ProfilePage from './components/ProfilePage.jsx'
+import UserInfo from './components/UserInfo.jsx'
+import UserDetails from './components/UserDetails.jsx'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -43,7 +46,7 @@ function App() {
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography"/>
 
       <UserContext.Provider value={userData}>
-        <ProfilePage />;
+        <ProfilePage />
       </UserContext.Provider>
 
     </>
